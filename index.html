@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="min-h-screen font-mono">
-    <header class="min-h-[8vh] bg-green-500 bg-[url(./assets/paper.avif)] p-4 flex justify-between items-center lg:px-14 lg:border-b-1 lg:border-[#6b6666]" >
+    <header class="min-h-[8vh] bg-[url(./assets/paper.avif)] p-4 flex justify-between items-center lg:px-14 lg:border-b-1 lg:border-[#6b6666]" >
         <img src="./assets/kanyelogo.png" width="70" alt="">
         <div class="flex gap-4 text-xs lg:text-xl lg:gap-15 text-[#434242]">
         <p class="cursor-pointer hover:text-black">STORY</p>
@@ -20,7 +20,33 @@
         </div>
         <i class="ri-menu-line cursor-pointer   "></i>
     </header>
-    <main class="min-h-[80vh] bg-blue-500"></main>
+    <main class="min-h-[80vh] bg-blue-500 bg-[url(./assets/paper.avif)]">
+
+        <div class="min-h-[100vh] bg-[url(./assets/kanyeHero.png)] bg-no-repeat bg-contain flex flex-col relative">
+            <div class="relative flex flex-col justify-center items-center  w-full max-w-sm bg-[url(./assets/quoteBg.png)] bg-contain bg-center bg-no-repeat p-7 text-left left-[-16vh]">
+                <p class="text-[1.5vh]">“Everything <br> I'm <br> not makes <br> me everything <br> I am”</p>
+                <br>
+                <p class="font-bold text-xs"> <i class="ri-subtract-line"></i>Kanye West</p>
+            </div>
+            <img class="absolute left-[70%]" src="./assets/Dreams.png" width="100" alt="">
+            <img class="absolute left-[75%] top-[8%] rotate-8" src="./assets/texts.png" width="60" alt="">
+            <div class="flex justify-center mt-25 flex-col items-center p-2">
+
+                <h1 class="font-sans font-bold text-[13vh] scale-y-130">KANYE</h1>
+                <p class="tracking-[1.5vh] font-bold scale-y-130 scale-x-110 ml-2">The Beginning</p>
+                <p class="text-xs">Before The World Called Him "YE".</p>
+
+            </div>
+            <div class="flex justify-end gap-5 items-center px-6">
+                <div class=" w-[30vh] h-[0.2vh] bg-black"></div>
+                <p class="text-sm ">Scroll</p>
+                <i class="ri-arrow-down-long-line"></i>
+            </div>
+        </div>
+
+            
+
+    </main>
     <section class="min-h-[200vh] bg-yellow-500"></section>
     <section class="min-h-[300vh] bg-pink-500"></section>
 </body>
