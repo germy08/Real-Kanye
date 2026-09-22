@@ -20,9 +20,29 @@
         </div>
         <i class="ri-menu-line cursor-pointer   "></i>
     </header>
-    <main class="min-h-[80vh] bg-blue-500 bg-[url(./assets/paper.avif)]">
 
-        <div class="min-h-[100vh] bg-[url(./assets/kanyeHero.png)] bg-no-repeat bg-contain flex flex-col relative">
+    <main class=" relative [80vh] bg-blue-500 bg-[url(./assets/paper.avif)] lg:flex lg:justify-center">
+        <!-- PC Config -->
+       <div class="lg:w-[100vw] lg:min-h-screen lg:flex lg:justify-center lg:items-start">
+        <img src="./assets/kanyeHero.png" class="hidden lg:block w-[102vh] mr-100 " alt="">
+
+        <div class="hidden absolute lg:right-[82vw] rotate-5 top-[1vh] lg: block lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-[url(./assets/quoteBg.png)] lg:bg-contain lg:bg-center lg:bg-no-repeat lg:p-23 lg:text-left">
+                <p class="hidden lg:block lg:text-[3vh]">“Everything <br> I'm <br> not makes <br> me everything <br> I am”</p>
+                <br>
+                <p class=" hidden lg:block :font-bold lg:text-l"> <i class="ri-subtract-line"></i>Kanye West</p>
+            </div>
+
+            <img width="600" class="hidden lg:block lg:absolute left-0 top-[40vh]" src="./assets/kanyepiano.png" alt="">
+            <img width="500" class="hidden lg:block lg:absolute left-[65vw] top-[46vh]" src="./assets/rightpic.png" alt="">
+
+            <h1 class=" absolute left-[48vw] top-[1vh] hidden lg:block text-[25vh] bold font-black leading-50 text-right font-[Helvetica]">Kanye<br>West</h1>
+            <p class="hidden lg:block absolute font-bold font-[Helvetica] ml-2 text-4xl left-[60vw] tracking-[2vh] top-[45vh]">THE BEGINNING</p>
+            <p class="hidden lg:block absolute text-l font-thin left-[65vw] top-[50vh] ">Before The World Called Him "YE".</p>
+            <!-- <img class="hidden lg:block absolute left-[75%] top-[8%] rotate-8" src="./assets/texts.png" width="60" alt=""> -->
+
+       </div>
+       <!-- Phone Config -->
+        <div class="min-h-[100vh] bg-[url(./assets/kanyeHero.png)] lg:bg-contain  bg-no-repeat bg-contain flex flex-col relative lg:hidden">
             <div class="relative flex flex-col justify-center items-center  w-full max-w-sm bg-[url(./assets/quoteBg.png)] bg-contain bg-center bg-no-repeat p-7 text-left left-[-16vh]">
                 <p class="text-[1.5vh]">“Everything <br> I'm <br> not makes <br> me everything <br> I am”</p>
                 <br>
