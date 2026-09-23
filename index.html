@@ -10,7 +10,7 @@
 />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="min-h-screen font-mono">
+<body class="min-h-screen font-mono overflow-x-hidden">
     <header class="min-h-[8vh] bg-[url(./assets/paper.avif)] p-4 flex justify-between items-center lg:px-14 lg:border-b-1 lg:border-[#6b6666]" >
         <img src="./assets/kanyelogo.png" class="lg:hidden" width="70" alt="">
         <img src="./assets/kanyelogo.png"class="hidden lg:block cursor-pointer" width="100" alt="">
@@ -69,7 +69,8 @@
             
 
     </main>
-    <section class="min-h-[159vh] lg:min-h-[100vh] bg-[url(./assets/paper2.png)]  bg-contain grid grid-rows-[1fr_1fr_1fr_2fr]">
+    <!-- Mobile Journey Config -->
+    <section class="min-h-[159vh] lg:min-h-[100vh] bg-[url(./assets/paper2.png)]  bg-contain grid grid-rows-[1fr_1fr_1fr_2fr] lg:hidden">
         <div class=" bg-[url(./assets/img1.png)] px-10 py-5 bg-contain bg-no-repeat">
             <div class="flex flex-col justify-center gap-4 items-start">
                 <p class="text-[10vw] text-black bold font-[Helvetica]">01</p>
@@ -123,6 +124,71 @@ The College <br> Dropout wasn't <br> just an album,
             </div>
         </div>
     </section>
+
+    <!-- pc Config -->
+
+    <section class="hidden lg:grid lg:min-h-[100vh] bg-[url(./assets/paper2.png)] bg-cover grid-cols-[1fr_1fr_1fr_2fr]">
+
+    <div class=" pr-[0.1vw] pl-[2vw] py-[5vh] flex items-start flex-row-reverse justify-center">
+        <div class="min-h-[80vh] w-[0.1vw] bg-black"></div>
+        <div class="flex flex-col justify-start gap-4 items-start">
+            <p class="text-[7vw] text-black bold font-[Helvetica]">01</p>
+            <div class="flex flex-col items-center">
+                <p class="font-sans text-[4vw] ">Chicago</p>
+                <p class="text-[1vw]">(1977-1996)</p>
+            </div>
+            <p class="mt-[2vw] text-[1.5vw] text-center">Born in Atlanta, raised in Chicago. <br>
+A city that shaped his sound, <br>
+his perspective and <br> his hunger
+to be different.</p>
+        </div>
+    </div>
+    
+    <div class=" pr-[0.1vw] pl-[2vw] py-[5vh] flex items-start flex-row-reverse justify-center">
+        <div class="min-h-[80vh] w-[0.1vw] bg-black"></div>
+        <div class="flex flex-col justify-start gap-4 items-start">
+            <p class="text-[7vw] text-black bold font-[Helvetica]">02</p>
+            <div class="flex flex-col items-center">
+                <p class="font-sans text-[4vw] ">Producer</p>
+                <p class="text-[1vw]">(1996-2000)</p>
+            </div>
+            <p class="mt-[2vw] text-[1.5vw] text-center">Before the fame. there were  beats. 
+Kanye made a name for himself 
+as one of the most sought-after 
+producers in hip-hop.</p>
+        </div>
+    </div>
+    
+    <div class=" pr-[0.1vw] pl-[2vw] py-[5vh] flex items-start flex-row-reverse justify-center">
+        <div class="min-h-[80vh] w-[0.1vw] bg-black"></div>
+        <div class="flex flex-col justify-start gap-4 items-start">
+            <p class="text-[7vw] text-black bold font-[Helvetica]">03</p>
+            <div class="flex flex-col items-center">
+                <p class="font-sans text-[3vw] ">Roc-A-Fella</p>
+                <p class="text-[1vw]">(2000-2004)</p>
+            </div>
+            <p class="mt-[2vw] text-[1.5vw] text-center">Roc-A-Fella Records. 
+Produced for Jay-Z and many others.
+Learnt the game. Sharpened his
+vision. Prepared for more.</p>
+        </div>
+    </div>
+    
+    <div class=" pr-[0.1vw] pl-[2vw] py-[5vh] flex items-start flex-row-reverse justify-center bg-[url(assets/pcclg.png)] bg-cover">
+        <div class="min-h-[80vh] w-[0.1vw] bg-black"></div>
+        <div class="flex flex-col justify-start gap-4 items-start ">
+            <p class="text-[7vw] text-black bold font-[Helvetica]">04</p>
+            <div class="flex flex-col items-center">
+                <p class="font-sans text-[4vw] ">The College Dropout</p>
+                <p class="text-[1vw]">(2004)</p>
+            </div>
+            <p class="mt-[2vw] text-[1.5vw] text-left">A different kind of debut. <br>
+Honest. Humble. Revolutionary. <br> 
+The College Dropout <br> wasn't just an <br> album,
+  it was a  CHANGE.</p>
+        </div>
+    </div> 
+</section>
 
     <section class="min-h-[300vh] bg-pink-500"></section>
 </body>
