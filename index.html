@@ -14,7 +14,7 @@
     <header class="min-h-[8vh] bg-[url(./assets/paper.avif)] p-4 flex justify-between items-center lg:px-14 lg:border-b-1 lg:border-[#6b6666]" >
         <img src="./assets/kanyelogo.png" class="lg:hidden" width="70" alt="">
         <img src="./assets/kanyelogo.png"class="hidden lg:block cursor-pointer" width="100" alt="">
-        <div class="flex gap-4 text-xs lg:text-xl lg:gap-15 text-[#434242]">
+        <div class="flex gap-4 text-xs lg:text-xl lg:gap-15 text-[#434242] z-50">
         <p class="cursor-pointer hover:text-black">STORY</p>
         <P class="cursor-pointer hover:text-black">MUSIC</P>
         <P class="cursor-pointer hover:text-black">ARCHIVE</P>
@@ -189,8 +189,9 @@ The College Dropout <br> wasn't just an <br> album,
     </div> 
 </section>
 
-    <section class="min-h-[300vh] bg-[url(assets/darkpaper.png)] bg-contain grid grid-rows-[0.7fr_6fr_2fr] p-4 border-y-1 border-white">
-        <div class=" flex flex-col justify-center items-center border-b-1 border-white    ">
+<section class="min-h-[250vh] bg-[url(assets/darkpaper.png)] bg-contain grid grid-rows-[0.7fr_6fr_1fr] p-4 border-y-1 border-white">
+        
+        <div class="flex flex-col justify-center items-center border-b-1 border-white">
             <h2 class="font-[serif] text-[20vw] text-[#c43433]">THE RISE</h2>
             <div class="flex items-center gap-2">
                 <div class="w-[20vw] h-[0.1vh] bg-white"></div>
@@ -198,32 +199,111 @@ The College Dropout <br> wasn't just an <br> album,
                 <div class="w-[20vw] h-[0.1vh] bg-white"></div>
             </div>
         </div>
-        <div class="bg-r-400 grid">
-            <div class="flex">
-                <div class="">
-                    <h3 class="font-[serif] text-[10vw] text-white">2005</h3>
-                    <div class="flex flex-col gap-10">
-                        <h3 class="text-white text-[5.5vw]">Late Registration</h3>
-                        <p class="text-[3vw] text-white">Bigger sound. Deeper stories.
-                        Late Registration proved
-                        Kanye wasn't a fluke - 
-                        he was the real deal.</p>
-
-                        <p class="text-white text-[2vw] tracking-[0.7vw]">HIGHER EDUCATION. <br> HIGHER AMBITIONS.</p>
-
-                        <button class="underline underline-offset-5 text-white"> VIEW ERA <i class="ri-arrow-right-long-line"></i></button>
+        
+        <div class="flex flex-col"> 
+            
+            <!-- 2005 Era -->
+            <div class="bg-r-400 grid">
+                <div class="flex border-b-1 p-2 border-white">
+                    <div class="w-[60vw]">
+                        <h3 class="font-[serif] text-[10vw] text-white">2005</h3>
+                        <div class="flex flex-col gap-10">
+                            <h3 class="text-white text-[5.5vw]">Late Registration</h3>
+                            <p class="text-[3vw] text-white">Bigger sound. Deeper stories. Late Registration proved Kanye wasn't a fluke - he was the real deal.</p>
+                            <p class="text-white text-[2vw] tracking-[0.7vw]">HIGHER EDUCATION. <br> HIGHER AMBITIONS.</p>
+                            <button class="underline underline-offset-5 text-white"> VIEW ERA <i class="ri-arrow-right-long-line"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="./assets/kanyepose.jpg" width="1200" alt="">
+                        <img src="./assets/latereg.jpg" alt="">
                     </div>
                 </div>
-                <div class="">
-                    <img src="./assets/kanyepose.jpg" width="1200" alt="">
-                    <img src="./assets/latereg.jpg" alt="">
+            </div> 
+
+            <!-- 2007 Era -->
+            <div class="bg-r-400 grid">
+                <div class="flex border-b-1 p-2 border-white">
+                    <div class="w-[60vw]">
+                        <h3 class="font-[serif] text-[10vw] text-white">2007</h3>
+                        <div class="flex flex-col gap-10">
+                            <h3 class="text-white text-[5.5vw]">Graduation</h3>
+                            <p class="text-[3vw] text-white">Bolder. Brighter. Fearless. Graduation took Kanye's vision to new heights, blending hip-hop with a new, global sound.</p>
+                            <p class="text-white text-[2vw] tracking-[0.7vw]">GOOD MORNING <br> TO A BRIGHTER WORLD.</p>
+                            <button class="underline underline-offset-5 text-white"> VIEW ERA <i class="ri-arrow-right-long-line"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="./assets/graduation.webp" width="1200" alt="">
+                        <img src="./assets/gradcover.jpg" alt="">
+                    </div>
+                </div>
+            </div> 
+
+            <!-- 2008 Era -->
+            <div class="bg-r-400 grid">
+                <div class="flex border-b-1 p-2 border-white">
+                    <div class="w-[60vw]">
+                        <h3 class="font-[serif] text-[10vw] text-white">2008</h3>
+                        <div class="flex flex-col gap-10">
+                            <h3 class="text-white text-[5.5vw]">808s & Heartbreak</h3>
+                            <p class="text-[3vw] text-white">Vulnerable. Experimental. Human. 808s & Heartbreak showed a different side of Kanye - one that felt pain, but turned it into art.</p>
+                            <p class="text-white text-[2vw] tracking-[0.7vw]">HEARTBREAK. <br> STILL SOUNDS BEAUTIFUL.</p>
+                            <button class="underline underline-offset-5 text-white"> VIEW ERA <i class="ri-arrow-right-long-line"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="./assets/heartbreak.jpg" width="1200" alt="">
+                        <img src="./assets/heartcover.png" alt="">
+                    </div>
+                </div>
+            </div> 
+
+            <!-- 2010 Era -->
+            <div class="bg-r-400 grid">
+                <div class="flex border-b-1 p-2 border-white">
+                    <div class="w-[60vw]">
+                        <h3 class="font-[serif] text-[10vw] text-white">2010</h3>
+                        <div class="flex flex-col gap-10">
+                            <h3 class="text-white text-[5.5vw]">My Beautiful Dark Twisted Fantasy</h3>
+                            <p class="text-[3vw] text-white">A masterpiece. My Beautiful Dark Twisted Fantasy was chaos, brilliance and everything in between. Kanye at his most ambitious.</p>
+                            <p class="text-white text-[2vw] tracking-[0.7vw]">THE BEST HIP-HOP. <br> ALBUM EVER.</p>
+                            <button class="underline underline-offset-5 text-white"> VIEW ERA <i class="ri-arrow-right-long-line"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="./assets/mbdtfkanye.jpg" width="1200" alt="">
+                        <img src="./assets/mbdtfcover.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="bg-pink-500"></div>
-            <div class="bg-blue-500"></div>
-            <div class="bg-violet-500"></div>
+            
         </div>
-        <div class="bg-yellow-800"></div>
-    </section>
+
+        
+        <div class="bg-[url(assets/finalkanye.png)] bg-contain bg-no-repeat grid grid-cols-[1fr_1fr] py-2">
+            <div class="bg--400"></div>
+            <div class="flex flex-col gap-15">
+                <div class="flex flex-col gap-1 text-white">
+                    <div class="flex flex-col">
+                        <h1 class="text-[6vw] font-serif">BEFORE YE, <br> THERE WAS</h1>
+                        <h1 class="text-[9vw] font-[Helvetica] text-white font-black">KANYE.</h1>
+                    </div>
+                    <div class="w-[25vw] h-[0.2vh] bg-white"></div>
+                </div>
+                <div class="flex flex-col gap-3 text-white">
+                    <div class="flex flex-col">
+                        <h1 class="text-[3vw] ">A KID FROM CHICAGO <br>
+                                                WHO JUST WANTED <br>
+                                                TO MAKE GOOD MUSIC.</h1>
+
+                    </div>
+                    <div class="w-[25vw] h-[0.2vh] bg-white"></div>
+                </div>
+            </div>
+        </div>
+        
+</section>
+
 </body>
 </html>
